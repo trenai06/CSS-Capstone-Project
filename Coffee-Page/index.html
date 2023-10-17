@@ -6,6 +6,7 @@
     <link href="styles.css" rel="stylesheet">
 </head>
 <body>
+    
     <div class="container">
         <div class="navbar">
             <p>Home</p>
@@ -98,9 +99,10 @@
         </form>
 
             <div class="notes">
-                <h3> Any allergies, substitutions or notes</h3>
+                <h3 id="ordering"> Any allergies, substitutions or notes</h3>
                 <textarea rows="3" cols="100"></textarea>
-               <button>Submit Order</button>
+                
+               <button class="thanks" type="button" onclick= 'document.getElementById("ordering").innerHTML = "Thank you for Ordering! See you soon!"'>Submit Order</button>
             </div>
     </div>
 </body>
