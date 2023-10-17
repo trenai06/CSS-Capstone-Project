@@ -1,0 +1,107 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee Webpage</title>
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <p>Home</p>
+            <p>Menu </p>
+            <p>Locations</p>
+            <p>About</p>
+            <button class="order">Order Now!</button>
+        </div>
+        <div> <img class="image" src="./assets/Basically-Coffee-0219-03.webp" alt="Coffee Beans"></div>
+            
+        
+    <div class="middle">     
+        <form>
+            <div class="info">
+                <h1> Order Here!</h1>
+                    <div>
+                        <label for="name"> Full Name</label> 
+                            <br>
+                        <input type="text" name="name"  id="name" size="120px">
+                    </div>
+                    <div>
+                        <label for="email">Email Address</label>    
+                            <br>       
+                        <input type="text" name="email" id="email" size="120px">
+                    </div>
+                <p class="share"> * We'll never share your info with anyone else. </p>
+            </div>
+            
+            <div class="drinks">   
+                <div class="coffee-type">
+                    <h3> What's your Poison?</h3>
+                    <div>
+                        <input type="radio" name="coffee-type" id="coffee">
+                        <label for="coffee"> Coffee </label>
+                    </div>
+                    <div>
+                        <input type="radio" name="coffee-type" id="tea">
+                        <label for="tea"> Black Tea </label>
+                    </div>
+                    <div>
+                        <input type="radio" name="coffee-type" id="americano">
+                        <label for="americano">Americano</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="coffee-type" id="latte">
+                        <label for="latte"> Latte </label>
+                    </div>
+                    <div>
+                        <input type="radio" name="coffee-type" id="mocha">
+                        <label for="mocha">Mocha</label>
+                    </div>
+                </div>
+        
+                <div class="shot-choice">
+                    <h3> Any shots? </h3>
+                    <div>
+                        <input type="checkbox" name="shot-choice" id="espresso">
+                        <label for="espresso">Espresso</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="shot-choice" id="caramel">
+                        <label for="caramel"> Caramel </label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="shot-choice" id="hazelnut">
+                        <label for="hazelnut"> Hazelnut </label>
+                    </div>
+                </div>
+
+                <div class="milk-option">
+                    <h3> Any Milk? </h3>
+                    <div>
+                        <input type="checkbox" name="milk-option" id="whole">
+                        <label for="whole"> Whole Milk</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="milk-option" id="oat">
+                        <label for="oat">Oat Milk</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="milk-option" id="soy">
+                        <label  for="soy"> Soy Milk</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="milk-option" id="none">
+                        <label for="none"> No Milk</label>
+                    </div>
+                </div>
+            </div>
+        </form>
+
+            <div class="notes">
+                <h3> Any allergies, substitutions or notes</h3>
+                <textarea rows="3" cols="100"></textarea>
+               <button>Submit Order</button>
+            </div>
+    </div>
+</body>
+</html>

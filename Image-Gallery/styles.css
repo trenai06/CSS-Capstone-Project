@@ -1,0 +1,169 @@
+*{
+    padding:0;
+    margin:0;
+}
+
+.container{
+    
+    display:flex;
+    flex-direction: column;
+    border:solid 2px black;
+    color:lightgray;
+    background-color: navy;
+    padding: 30px; 
+    align-items: center;  
+}
+
+.navbar{
+    display:flex;
+    font-size: 25px;
+    column-gap: 30px;
+    margin-bottom: 50px;
+    color:#8470ff;
+    border-bottom: purple solid 2px;    
+}
+
+button{
+    background-color: black;  
+    color: #8470ff ;
+    font-size: 25px;
+    height: 50px;
+    width: 110px;  
+}
+
+button:hover{
+    height:70px;
+}
+
+.grid-container{
+    display:grid;
+    min-height: 1450px;
+    width: 100%;
+    grid-template-rows: (12, 1fr);
+    grid-template-columns: (7, 1fr);
+    grid-template-areas: 
+    ". . . card-2 . . ."
+    ". . card-1 card-2 . . ."
+    ". . card-1 card-2 card-3 . ."
+    ". . card-1 card-2 card-3 . ."
+    ". . card-1 card-2  . . ."
+    ". . . card-2 . . ."
+    ". . card-4 . . . ."
+    ". . card-4 card-5 card-6 . ."
+    ". . card-4 card-5 card-6 . ."
+    ". . card-4 card-5 card-6 . ."
+    ". . card-4 card-5 card-6 . ."
+    ". . card-4 . . . ."
+    ;
+    padding-left: 50px;
+}
+
+a:hover{
+    font-size:35px;
+    color:white;
+}
+
+a:visited{
+    color:purple;
+}
+.card-1{
+    grid-area: card-1;
+    height:550px;
+    width: 350px;
+    padding:15px;
+    background-color:black;  
+}
+
+.elastic{
+    height:500px;
+    width: 350px;
+    padding-bottom: 10px;   
+}
+
+.card-2{
+    grid-area: card-2;
+    height: 750px;
+    width: 350px;
+    padding:15px;
+    background-color:slateblue;
+}
+
+.spider{
+    height:700px;
+    width: 350px;
+    padding-bottom: 10px;
+}
+
+.card-3{
+    grid-area: card-3;
+    width: 400px;
+    height:400px;
+    padding:15px;
+    background-color:black;
+}
+
+.blank{
+    height: 350px;
+    width: 400px;
+    padding-bottom: 10px;
+}
+
+.card-4{
+    grid-area: card-4;
+    height:650px;
+    width:350px;
+    padding:15px;
+    background-color:slateblue;
+}
+
+.candy{
+    height:600px;
+    width: 350px;
+    padding-bottom: 10px;   
+}
+
+.card-5{
+    grid-area: card-5;
+    width: 350px;
+    height: 550px;
+    padding:15px;
+    background-color: black;
+}
+
+.wonder{
+    height: 500px;
+    width: 350px;
+    padding-bottom: 5px;   
+}
+
+.card-6{
+    grid-area: card-6;
+    background-color:slateblue;
+    padding:10px;
+    width:400px;
+}
+
+.spawn{
+    height: 500px;
+    width: 400px;
+    padding-bottom: 10px;
+}
+
+@media(max-width:1000px){
+    .grid-container{
+        display:flex;
+        flex-direction: column;
+        flex-wrap:wrap;
+        align-items: center;
+        row-gap:20px;
+    }
+
+    .card{
+        width:500px;
+       padding: 50px;
+    }
+
+    .image{
+        width: 500px;   
+    }
+}

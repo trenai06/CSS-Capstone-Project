@@ -1,0 +1,74 @@
+*{
+    padding:0;
+    margin:0;
+    
+}
+
+.container{
+    height: 100vh;
+    width:auto; 
+    
+}
+
+.navbar{
+    display:flex;
+    column-gap: 50px; 
+    justify-content: center;
+    font-size: x-large;
+    padding: 30px;
+}
+
+.image{
+    width: 100%;
+    height: 200px;
+    object-fit:cover;
+}
+.share{
+    font-size:small;
+}
+
+.middle{
+    display:flex;
+    flex-direction: column;
+    row-gap: 50px;
+    align-items: center;
+   
+}
+
+.drinks{
+    display: flex;
+    column-gap: 150px;
+}
+
+.info{
+    display: flex;
+    flex-direction: column;
+    padding-top:15px;
+    row-gap: 10px;
+   padding-bottom: 50px;
+    
+}
+
+.notes{
+    display:flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+
+button{
+    background-color:cornflowerblue;
+    color: white;
+    height:30px;
+    width: 100px;
+}
+  
+.order{
+    background-color: brown;
+    color:white;
+    border-radius: 5px;
+}
+
+
+
+
+
