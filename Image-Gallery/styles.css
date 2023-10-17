@@ -14,13 +14,30 @@
     align-items: center;  
 }
 
+.header{
+    font-size: 80px;
+    padding-bottom: 50px;
+    font-family: 'Tilt Neon', sans-serif;
+    color: darkorchid;
+    width: 640px;
+    font-weight: bolder;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: navy;
+    border-top: solid;
+    border-right: solid;
+    border-left: solid;
+   
+    
+}
+
+
 .navbar{
     display:flex;
     font-size: 25px;
     column-gap: 30px;
     margin-bottom: 50px;
     color:#8470ff;
-    border-bottom: purple solid 2px;    
+    border-bottom: purple solid 5px;    
 }
 
 button{
