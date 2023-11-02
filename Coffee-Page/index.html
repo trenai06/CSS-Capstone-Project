@@ -1,12 +1,16 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Coffee Webpage</title>
+    <title>Coffee WebPage</title>
     <link href="styles.css" rel="stylesheet">
+   
 </head>
+
+</html>
 <body>
-    
+    </div>
     <div class="container">
         <div class="navbar">
             <p>Home</p>
@@ -25,73 +29,77 @@
                     <div>
                         <label for="name"> Full Name</label> 
                             <br>
-                        <input type="text" name="name"  id="name" size="120px">
+                        <input autocomplete="off" type="text" name="name"  id="name" size="120px">
                     </div>
                     <div>
                         <label for="email">Email Address</label>    
                             <br>       
-                        <input type="text" name="email" id="email" size="120px">
+                        <input autocomplete="off" type="text" name="email" id="email" size="120px">
                     </div>
                 <p class="share"> * We'll never share your info with anyone else. </p>
             </div>
             
             <div class="drinks">   
-                <div class="coffee-type">
+                <div>
                     <h3> What's your Poison?</h3>
                     <div>
-                        <input type="radio" name="coffee-type" id="coffee">
+                        <input  type="radio" name="coffee-type" id="coffee" value="Coffee">
                         <label for="coffee"> Coffee </label>
                     </div>
                     <div>
-                        <input type="radio" name="coffee-type" id="tea">
+                        <input type="radio" name="coffee-type" id="tea" value="Tea">
                         <label for="tea"> Black Tea </label>
                     </div>
                     <div>
-                        <input type="radio" name="coffee-type" id="americano">
+                        <input type="radio" name="coffee-type" id="americano" value="Americano">
                         <label for="americano">Americano</label>
                     </div>
                     <div>
-                        <input type="radio" name="coffee-type" id="latte">
+                        <input  type="radio" name="coffee-type" id="latte" value="Latte">
                         <label for="latte"> Latte </label>
                     </div>
                     <div>
-                        <input type="radio" name="coffee-type" id="mocha">
+                        <input  type="radio" name="coffee-type" id="mocha" value="Mocha">
                         <label for="mocha">Mocha</label>
                     </div>
                 </div>
         
-                <div class="shot-choice">
+                <div>
                     <h3> Any shots? </h3>
                     <div>
-                        <input type="checkbox" name="shot-choice" id="espresso">
+                        <input class="submit" type="checkbox" name="shot-choice" id="espresso" value="Espresso">
                         <label for="espresso">Espresso</label>
                     </div>
                     <div>
-                        <input type="checkbox" name="shot-choice" id="caramel">
+                        <input class="submit" type="checkbox" name="shot-choice" id="caramel" value="Caramel">
                         <label for="caramel"> Caramel </label>
                     </div>
                     <div>
-                        <input type="checkbox" name="shot-choice" id="hazelnut">
+                        <input class="submit" type="checkbox" name="shot-choice" id="hazelnut" value="Hazelnut">
                         <label for="hazelnut"> Hazelnut </label>
+                    </div>
+                    <div>
+                        <input class="submit" type="checkbox" name="shot-choice" id="no shot" value="No Shot">
+                        <label for="no shot"> No Shot </label>
                     </div>
                 </div>
 
-                <div class="milk-option">
+                <div>
                     <h3> Any Milk? </h3>
                     <div>
-                        <input type="checkbox" name="milk-option" id="whole">
+                        <input type="radio" name="milk-option" id="whole" value="Whole Milk">
                         <label for="whole"> Whole Milk</label>
                     </div>
                     <div>
-                        <input type="checkbox" name="milk-option" id="oat">
+                        <input  type="radio" name="milk-option" id="oat" value="Oat Milk">
                         <label for="oat">Oat Milk</label>
                     </div>
                     <div>
-                        <input type="checkbox" name="milk-option" id="soy">
+                        <input  type="radio" name="milk-option" id="soy" value="Soy">
                         <label  for="soy"> Soy Milk</label>
                     </div>
                     <div>
-                        <input type="checkbox" name="milk-option" id="none">
+                        <input  type="radio" name="milk-option" id="none" value="No Milk">
                         <label for="none"> No Milk</label>
                     </div>
                 </div>
@@ -99,10 +107,11 @@
         </form>
 
             <div class="notes">
-                <h3 id="ordering"> Any allergies, substitutions or notes</h3>
-                <textarea rows="3" cols="100"></textarea>  
-               <button class="thanks" type="button" onclick= 'document.getElementById("ordering").innerHTML = "Thank you for Ordering! See you soon!"'>Submit Order</button>
+                <h3 id="ordering">  Any allergies, substitutions or notes</h3>
+                <textarea name="textarea" id="textarea" rows="3" cols="100"></textarea>  
+               <button autocomplete="off"  type="button" onclick="fullOrder(), newMessage()">Submit Order</button>
             </div>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>
