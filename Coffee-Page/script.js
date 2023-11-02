@@ -44,14 +44,12 @@ function shotChoice(){
             }
          )
          for(i=0; i < shots.length; i++){
-                // if ( i == 0 && shots.length == 1){
-                //     string += `${shots[i]}`
-                // } else {
+               // if not the first shot 
                     if(0 < i && i < shots.length){
-                        string += ' ' + `,` + ' ' + `${shots[i]}` 
+                        string += `,` + ' ' + `${shots[i]}`
                     } else {
-                
-                string += ' ' + `${shots[i]}` + ' '
+                //if the first shot 
+                string += `${shots[i]}` 
             }
             console.log(string)
         }
@@ -60,9 +58,11 @@ function shotChoice(){
 }
 
 function fullOrder(){
-    alert(`Hello ${fullName()}! You ordered a ${drinkChoice()} with ${milkChoice()} and ${shotChoice()} . Your notes were "${notes()}". A confirmation email will be sent to ${emailAddress()}. Please click "Okay" to confirm your order.`)
+    alert(`Hello ${fullName()}! You ordered a ${drinkChoice()} with ${milkChoice()} and ${shotChoice()}. Your notes were "${notes()}" A confirmation email will be sent to ${emailAddress()}. Please click "Okay" to confirm your order.`)
 }
 
 function newMessage(){
     message = document.getElementById("ordering").innerHTML = (`Thank you for ordering! We'll see you soon!`)
 }
+
+// Remember to think through and map out thought processes when working through projects.
